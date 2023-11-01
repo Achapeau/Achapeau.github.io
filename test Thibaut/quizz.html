@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_mobile.css">
+    <link rel="stylesheet" href="../CSS/desktop_resp_style.css">
+    <title>&copy WILD-QUIZZ</title>
+</head>
+
+<body class="quizz-body">
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/logo.png" alt="logo"/>
+        </a>
+    </header>
+
+    <main class="quizz-main">   
+        <h2 id="question">Question</h2>    
+
+        <div class="timer">
+            <div class="timeLeftTxt">Time left</div>
+            <div class="timerSec"></div>
+        </div>
+
+        <section id="answers">
+            <button class="answer-btn">C’est l’âge que vous avez et le plus jeune va chercher l’eau</button>
+            <button class="answer-btn">C’est la note que vous aurez à l’interro de cet après-midi</button>
+            <button class="answer-btn">C’est le nombre de filles avec qui vous sortirez dans la vie</button>
+            <button class="answer-btn">On sait pas, ça reste un mystère mais on est tous sur le coup…</button>
+        </section>
+        <button id="next-btn"> Prochaine question</button>
+    </main>
+
+    <footer>
+        <p>&copy 2023 WILD-QUIZZ. All rights reserved</p>
+    </footer>
+    <script src="../JS/timer.js"></script>
+    <script src="test_quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ab57cbd9ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WILD-QUIZZ</title>
+    <link rel="stylesheet" href="css/style_mobile.css" />
+    <link rel="stylesheet" href="css/desktop_resp_style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img class="logo" src="./img/logo.png" alt="logo"
+      /></a>
+      <button for="menu-toggle" class="menu-burger">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </button>
+
+      <div class="menu-dropdown" id="menu-toggle">
+        <a href="category.html">Category</a>
+        <a href="results.html">Résultats</a>
+        <a href="ressource.html">Ressources</a>
+        <a href="aboutus.html">About Us</a>
+      </div>
+    </header>
+
+    <main class="main-category">
+      <div class="btn-container">
+        <button class="btn-category" id="btn-cinema">Cinema</button>
+        <button class="btn-category" id="btn-culture">Culture Générale</button>
+        <button class="btn-category" id="btn-sport">Sport</button>
+        <button class="btn-category" id="btn-awards">Darwin Awards</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy 2023 WILD-QUIZZ. All rights reserved</p>
+    </footer>
+
+    <script src="JS/burgerMenu.js"></script>
+    <script src="JS/category.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+@media screen and (min-width: 640px) {
+  
+  /* Styles généraux*/
+    
+  /* Styles header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+ 
+  .menu-burger {
+    display: none;
+  } 
+
+  .menu-dropdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    position: relative;
+    top: 0;
+    font-size: 1.5rem;         
+  }
+
+
+  
+  /* Styles appliqués à des pages spécifiques */
+
+  /* Page Index */
+
+  .btn-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding-bottom: 20px;
+    
+  }
+  .btn-container button {
+    border-radius: 60px;
+    width: 80vw;
+    min-height: 10vh;
+    margin-top: 60px;
+  }
+  
+  /* Page Quizz */
+
+  .quizz-main {
+      margin: 30px 100px 30px 100px;
+  }
+
+  
+  .question p {
+    font-size: calc(2 * var(--inbox-text-font-size));
+  }
+  
+  
+  .quizz-main {
+    padding-bottom: 2.5rem;
+    margin: 20px 10px 20px 10px ;
+    min-height: calc(100vh - 97px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+        
+  .question {
+    grid-column : 1 / 3 ;
+    text-align: center;
+     align-items: center;
+    border: 2px black solid;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--questions-color);
+    border-radius: 15px;
+    min-height: fit-content;
+  }
+        
+  .question h1 {
+    padding: 5px;
+    font-size: var(--title-font-size);
+  }
+  
+  .question p {
+    font-size: calc(1.5 *var(--inbox-text-font-size));
+  }
+  
+  .answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px ;
+  }
+        
+  .answers button {
+    background-color: var(--buttons-color);
+    padding: 50px;
+    border-radius: 15px;
+    font-size: var(--inbox-text-font-size);
+    min-height: 10vh;
+  }
+    
+  
+  /* Page Results */
+
+  .new-game {
+    font-size: 2em;
+    margin: auto 1em auto 1em;
+  }
+  .new-game img {
+    width: auto;
+  }
+  .logo {
+    width: auto;
+  }/*
+  .results-main {
+      display: flex;
+      flex-direction: unset;
+      justify-content: space-between;
+      align-items: center;
+
+  } */
+  .results-main {
+    justify-content: center;
+  }
+  .score-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  #results {
+    font-size: calc(1.2 * var(--title-font-size));
+    margin: 3%;
+    min-width: 390px;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  #comments {
+    text-shadow: none;
+    width: fit-content;
+    border-radius: 15px;
+    margin: 3vh 4vw 7vh 3vw;
+  } 
+
+
+  #comments  p {
+    padding: 30px;      
+    font-size: clamp(2rem, 5vw, 5rem);
+  }
+
+  /* Page Contact */
+  
+  .contact-form form {
+    margin-top: 5vh;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 5vh; 
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: var(--inbox-text-font-size);
+    resize: none;
+  }
+  
+  .contact-form textarea.message {
+    height: 250px;
+  }
+  
+  .contact-form button {
+    font-size: var(--inbox-text-font-size);
+    align-self: center;
+    padding: 10px 20px;
+    background: linear-gradient(#922765, #4f174d, #1c061b, #eb2364);
+    border: solid 2px darkgrey;
+    border-radius: 30px;
+   width: 40%;
+    height: 100px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Page ressources */
+  
+  .ressource-main article {
+    font-size: var(--text-font-size);
+  }
+  
+  .ressource-main  h1 {
+    font-size: calc(1.5 * var(--title-font-size));
+  }
+
+  .ressource-main h2 {
+    font-size: calc(0.5 *var(--title-font-size));
+  }
+
+  /* Page about us */
+
+  .aboutus-articles h1 {
+    font-size: calc(1.5 * var(--title-font-size));
+  }
+
+  .aboutus-articles h2 {
+    font-size: 2.5rem;
+  }
+  
+  .aboutus-articles p {
+    font-size: 1.5rem;
+  }
+      
+
+@media screen and (min-width: 1200px) {
+
+  .results-main{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+
+  }
+  .visual-array {
+    width: 25%;
+  }
+  
+  .desktop-results {
+    width: 45%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ab57cbd9ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WILD-QUIZZ</title>
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <link rel="stylesheet" href="css/desktop_resp_style.css">
+</head>
+<body>
+    <header>
+      <a href="index.html">
+        <img class="logo" src="img/logo.png" alt="logo"/>
+      </a>
+      <button for="menu-toggle" class="menu-burger">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </button>
+
+      <div class="menu-dropdown" id="menu-toggle">
+        <a href="index.html">Accueil</a>
+        <a href="results.html">Résultats</a>
+        <a href="ressource.html">Ressources</a>
+        <a href="aboutus.html">About Us</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Prénom" id="first-name" value="" required />
+          <input type="email" placeholder="Adresse e-mail" required />
+          <textarea
+            placeholder="Message"
+            maxlength="1000"
+            class="message"
+            required
+          ></textarea>
+          <button class="btn-contact" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy 2023 WILD-QUIZZ. All rights reserved</p>
+    </footer>
+
+    <script src="JS/contact.js"></script>
+    <script src="JS/burgerMenu.js"></script>
+  </body>
+</html>
