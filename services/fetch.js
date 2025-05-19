@@ -9,6 +9,7 @@ const swaggerLink = document.getElementById("swagger-link");
 
 jokeButton.addEventListener("click", async () => {
   try {
+    jokeContainer.textContent = "Chargement...";
     const response = await fetch(
       `${apiUrl}/blagues/random`
       //   "http://localhost:8080/blagues/random"
@@ -18,8 +19,7 @@ jokeButton.addEventListener("click", async () => {
     }
     const { question, answer } = await response.json();
 
-    console.log(question, answer);
-
+    jokeContainer.textContent = "";
     jokeQuestion.textContent = question
       ? question
       : "Aucune blague disponible 😅";
