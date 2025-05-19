@@ -33,12 +33,6 @@ Une interface simple et amusante, dans l’esprit des fameux emballages de bonbo
         └── carambar-homepage.webp
     ```
 
-## 🎨 Design
-
-- Univers graphique inspiré des emballages Carambar
-- Pas de responsive pour l’instant (pensé desktop-first)
-- L’affichage des blagues est intégré dans un visuel de "papier déplié"
-
 ## 🔗 À propos du backend
 
 Le backend est développé en Express.js et exposé via une API REST.  
