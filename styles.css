@@ -8,7 +8,8 @@
       color: #333;
       margin: 0;
       padding: 0;
-      font-family: 'fredoka', sans-serif;      
+      font-family: 'fredoka', sans-serif;   
+      background-color: #ffef03;   
     }
 
     h1 {
@@ -32,6 +33,7 @@
 
     #joke {
       margin-top: 2rem;
+      padding: 0.5rem;
       font-size: 1.25rem;
       max-width: 600px;
       text-align: center;
