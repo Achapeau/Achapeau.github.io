@@ -9,6 +9,9 @@ const swaggerLink = document.getElementById("swagger-link");
 
 jokeButton.addEventListener("click", async () => {
   try {
+    jokeQuestion.hidden = true;
+    jokeAnswer.hidden = true;
+    jokeContainer.hidden = false;
     jokeContainer.textContent = "Chargement...";
     const response = await fetch(
       `${apiUrl}/blagues/random`
@@ -19,12 +22,13 @@ jokeButton.addEventListener("click", async () => {
     }
     const { question, answer } = await response.json();
 
-    jokeContainer.textContent = "";
+    jokeContainer.hidden = true;
     jokeQuestion.textContent = question
       ? question
       : "Aucune blague disponible 😅";
+    jokeQuestion.hidden = false;
     jokeAnswer.textContent = answer ? answer : "";
-    jokeContainer.hidden = false;
+    jokeAnswer.hidden = false;
   } catch (error) {
     console.error(error);
     jokeContainer.textContent = "Impossible de récupérer une blague 🫠";
