@@ -1,0 +1,72 @@
+ body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      background-color: #fff8e1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      font-family: 'fredoka', sans-serif;      
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f57c00;
+    }
+
+    #joke {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      max-width: 600px;
+      text-align: center;
+      background-color: #f57c00;
+      border: #f57c00;
+      border-radius: 8px;
+      border-style: solid;
+      border-width: 2px;
+      font-family: 'Chewy', cursive;
+      color: #fff8e1;
+    }
+
+    #get-question {
+        text-align: start;
+    }
+
+    #get-answer {
+        text-align: end;
+    }
+
+    main {
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header {
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:baseline;
+      background-image: url('./img/carambar-homepage.webp');    
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 50vh;
+      min-width: 100%;
+    }
