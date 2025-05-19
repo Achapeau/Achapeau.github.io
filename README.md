@@ -10,7 +10,7 @@ Une interface simple et amusante, dans l’esprit des fameux emballages de bonbo
 
 ## 🚀 Démo en ligne
 
-👉 [caramblagues.github.io](https://Achapeau.github.io) _(GitHub Pages)_  
+👉 [Achapeau.github.io](https://Achapeau.github.io) _(GitHub Pages)_  
 👉 [Voir la documentation API (Swagger)](https://ton-back/api-docs)
 
 ## ⚙️ Fonctionnement
