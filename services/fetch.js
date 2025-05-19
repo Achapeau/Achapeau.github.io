@@ -4,13 +4,13 @@ const jokeButton = document.getElementById("get-joke");
 const jokeContainer = document.getElementById("joke");
 const jokeQuestion = document.getElementById("get-question");
 const jokeAnswer = document.getElementById("get-answer");
+const jokeContent = document.getElementById("joke-content");
 
 const swaggerLink = document.getElementById("swagger-link");
 
 jokeButton.addEventListener("click", async () => {
   try {
-    jokeQuestion.hidden = true;
-    jokeAnswer.hidden = true;
+    jokeContent.hidden = true;
     jokeContainer.hidden = false;
     jokeContainer.textContent = "Chargement...";
     const response = await fetch(
@@ -26,9 +26,8 @@ jokeButton.addEventListener("click", async () => {
     jokeQuestion.textContent = question
       ? question
       : "Aucune blague disponible 😅";
-    jokeQuestion.hidden = false;
     jokeAnswer.textContent = answer ? answer : "";
-    jokeAnswer.hidden = false;
+    jokeContent.hidden = false;
   } catch (error) {
     console.error(error);
     jokeContainer.textContent = "Impossible de récupérer une blague 🫠";

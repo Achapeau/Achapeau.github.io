@@ -46,6 +46,21 @@
       color: #fff8e1;
     }
 
+    #get-question, #get-answer {
+      margin-top: 2rem;
+      padding: 0.5rem;
+      font-size: 1.25rem;
+      max-width: 600px;
+      text-align: center;
+      background-color: #f57c00;
+      border: #f57c00;
+      border-radius: 8px;
+      border-style: solid;
+      border-width: 2px;
+      font-family: 'Chewy', cursive;
+      color: #fff8e1;
+    }
+
     #get-question {
         text-align: start;
     }
